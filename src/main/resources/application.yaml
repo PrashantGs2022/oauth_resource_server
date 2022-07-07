@@ -1,0 +1,19 @@
+
+server:
+  port: 9010
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9000/oauth/check_token
+    client:
+      client-secret: resourceserversecret
+      client-id: resourceserver
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
